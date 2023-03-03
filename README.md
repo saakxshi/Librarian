@@ -1,4 +1,4 @@
-# librarian
+# Librarian
 
 ## Project setup
 ```
