@@ -1,14 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
+import Login from '../views/Login.vue'
+import Books from '../views/Books.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/', // deafault page as its path is /
+    name: 'Login',
+    component: Login // or write component:()=> import('../views/login.vue')
+  },
+  {
+    path: '/books', // deafault page as its path is /
+    name: 'Books',
+    component: Books // or write component:()=> import('../views/login.vue')
   },
   {
     path: '/about',
@@ -26,4 +33,4 @@ const router = new VueRouter({
   routes
 })
 
-export default router
+export default router
