@@ -12,7 +12,7 @@
         <v-icon>mdi-badge-account</v-icon>
     </v-btn>
 
-    <v-btn value="nearby" @click="$router.push('/')">
+    <v-btn value="nearby" @click="$router.push('/members')">
         <span>Members</span>
 
         <v-icon>mdi-account</v-icon>

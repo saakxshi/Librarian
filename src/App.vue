@@ -1,6 +1,6 @@
 <template>
   <v-app>
-      <v-app-bar app color="primary" dark>
+      <v-app-bar app >
           <div class="d-flex align-center">
               <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="@/assets/logo.png" transition="scale-transition" width="40" />
   
@@ -9,7 +9,7 @@
   
           <v-spacer></v-spacer>
   
-          <v-btn text>
+          <v-btn text @click="$router.push('/')">
               Login
           </v-btn>
           <v-btn text>
