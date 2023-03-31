@@ -4,9 +4,9 @@
             <v-col cols='10'>
                 <h3>{{ title }}</h3>
             </v-col>
-            <v-col cols='2'>
+            <v-col cols='2' >
                 <div class="text-right">
-                    <v-btn small>
+                    <v-btn small @click="$emit('add')">
                         <v-icon>mdi-plus</v-icon>
                     </v-btn>
                 </div>
@@ -14,7 +14,7 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-text-field solo label="Search" append-icon="mdi-magnify">
+                <v-text-field solo label="Search" append-icon="mdi-magnify" @input="$emit('search',$event)">
                 </v-text-field>
             </v-col>
         </v-row>
